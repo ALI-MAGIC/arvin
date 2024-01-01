@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+ overflow: hidden;
+}
+.bg{
+  background: linear-gradient(#000 , #0f0 ,#000);
+  animation: animat 3s linear infinite;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+.container2 {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1000;
+}
+.container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+position: relative;
+flex-direction: column;
+gap: 40px;
+
+}
+h2{
+color: #0f0;
+font-size: xx-large;
+text-transform: uppercase;
+font-weight: 600;
+}
+.form{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 30px;
+
+}
+.inputbox input{
+width: 100%;
+border: none;
+background-color: #333;
+border-radius: 5px;
+padding: 20px 5px 7.5px;
+position: relative;
+color: #fff;
+font-size: 15px;
+}
+i{
+position: absolute;
+left: 0px;
+padding:  8px 10px;
+color: #625c5c;
+transition: 0.5s;
+font-style: none;
+pointer-events: none;
+z-index: 1;
+}
+input:focus ~ i , input:valid ~ i {
+transform: translateY(-8px);
+font-size: 15px;
+color: #bbb;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+}
+.links a{
+text-decoration: none;
+color: #bbb;
+
+}
+.links :nth-child(2){
+color: #0f0;
+font-weight: 600;
+
+
+}
+
+.inputbox input[type="submit"]{
+background-color: #0f0;
+padding: 10px;
+color: #000;
+font-weight: 600;
+}
+.inputbox input[type="submit"]:hover{
+background-color: rgb(34, 226, 34);
+
+}
+.inputbox input[type="submit"]:active{
+  background-color: rgb(0, 143, 0);
+  
+  }
+span{
+width: 57px; 
+height: 57px; 
+background-color: #131313;
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;
+transition:1.5s;
+}
+span:hover{
+background-color: #0f0;
+transition: 0s;
+}
+@keyframes animat{
+  
+  0%{
+position: absolute;
+bottom: 1000px;
+}
+  50%{
+    position: absolute;
+    bottom: 0px;
+    
+  }
+  100%{
+    position: absolute;
+    bottom: -1000px;
+    
+  }
+
+
+}
+
+
+
+

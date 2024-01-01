@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <link rel="stylesheet" href="dandan.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3afacf2a5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cantainerAll">
+      <div class="navbar">
+        <ul class="nalist">
+          <img src="dentist-3249382_1280.png" alt="" />
+          <div class="listcan">
+            <i class="fa-solid fa-bars list"></i>
+          </div>
+          <a href=""> <li class="navitems">خانه</li> </a>
+          <a href="../dandan mahsolat/mahsol.html"> <li class="navitems">گالری محصولات</li> </a>
+          <a href=""> <li class="navitems">تماس با ما</li> </a>
+        </ul>
+        <div class="serchcantainer">
+          <div class="serch">
+            <label for=""> جستوجو :</label>
+            <input type="search" required />
+            <a class="num" href="">نام کاربری</a>
+            <a href="" class="username"><img src="images.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="drop_down">
+        <a href=""> <li class="drop_downli">خانه</li> </a>
+        <a href=""> <li class="drop_downli2">گالری محصولات</li> </a>
+        <a href=""> <li class="drop_downli3">تماس با ما</li> </a>
+      </div>
+      <div class="bodycant">
+        <div class="body1">
+          <div class="div">
+            <div class="body1itemsA"></div>
+          </div>
+          <div class="div2">
+            <div class="body1items"></div>
+            <div class="body1items"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="titel">
+        <h3 class="titelh3">یه چیزی</h3>
+        <p class="titelp">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          delectus voluptatibus consequatur quis at aliquam earum veritatis
+          dolor similique
+        </p>
+      </div>
+
+      <div class="footer">
+        <div class="ulfooter">
+          <ul class="footerul">
+            <img src="dentist-3249382_1280.png" alt="" />
+            <h2>یه چیزی</h2>
+            <hr />
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+          </ul>
+          <ul class="footerul">
+            <h2>یه چیزی</h2>
+            <hr />
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+            <a href=""> <li class="footerli">یه چیزی</li> </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      const listcan = document.querySelector(".listcan");
+      const drop_downli = document.querySelector(".drop_downli");
+      const drop_downli2 = document.querySelector(".drop_downli2");
+      const drop_downli3 = document.querySelector(".drop_downli3");
+      const dropdown = document.querySelector(".drop_down");
+
+      listcan.onclick = function () {
+        dropdown.classList.toggle("open");
+        drop_downli.classList.toggle("openli");
+        drop_downli2.classList.toggle("openli");
+        drop_downli3.classList.toggle("openli");
+      };
+    </script>
+  </body>
+</html>

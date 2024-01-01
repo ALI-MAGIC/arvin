@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/3afacf2a5d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <a href="#About">
+        <li class="about">درباره من</li>
+      </a>
+      <a href="#skills">
+        <li>مهارت ها</li>
+      </a>
+      <a href="#projects">
+        <li>پروزه ها</li>
+      </a>
+      <a href="#footer">
+        <li>به ما بپیوندید</li>
+      </a>
+    </ul>
+  </nav>
+  <nav class="sidebar">
+    <ul>
+      <a onclick="hidesidebar()" href="#About">
+        <li class="about">درباره من</li>
+      </a>
+      <a onclick="hidesidebar()" href="#skills">
+        <li>مهارت ها</li>
+      </a>
+      <a onclick="hidesidebar()" href="#projects">
+        <li>پروزه ها</li>
+      </a>
+      <a onclick="hidesidebar()" href="#footer">
+        <li>به ما بپیوندید</li>
+      </a>
+    </ul>
+    <i onclick="hidesidebar()" class="fa-solid fa-xmark"></i>
+  </nav>
+  <i onclick="showsidebar()" class="bar fa-solid fa-bars"></i>
+  <div class="container1" id="About">
+    <div class="image">
+      <img src="img360-removebg.png" alt="" />
+    </div>
+    <div class="discription">
+      <span>سلام , من آروین هستم</span>
+      <h1>توسعه دهنده وب</h1>
+      <p>
+        سلام , من آروین مظفری هستم و 16 سالمه . من برنامه نویسی رو نیم سال قبل
+        شروع کردم . شما در این صفحه وب رزومه من رو میتئانید مشاهده و در صورت
+        نیاز پروزه هاتون رو به من بسپرید. همچنین رزومه من رو از طریق لینک زیر
+        دانلود کنید.
+      </p>
+      <a href="ای-استخدام-1701803841-آروین.pdf" download=""><button>دانلود</button></a>
+    </div>
+  </div>
+
+  <div class="container2" id="skills">
+    <div class="first">
+      <div class="firstitems">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+        <p>مهارت های من در html در سطح متوسط روبه بالا هست.</p>
+        <span>مهارت من</span>
+      </div>
+      <div class="firstitems">
+        <i class="fa-brands fa-square-js"></i>
+        <h3>JS</h3>
+        <p>مهارت های من در css در سطح متوسط هست.</p>
+        <span>مهارت من</span>
+      </div>
+      <div class="firstitems">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <p>من js رو به تازگی شروع به یادگیری کردم.</p>
+        <span>مهارت من</span>
+      </div>
+    </div>
+    <div class="second">
+      <div class="seconditem1">
+        <span>01</span>
+        <span>سالهای تجربه</span>
+      </div>
+      <div class="seconditem2">
+        <div class="exptable">
+          <span>10+</span>
+          <span>پروژه ها</span>
+        </div>
+        <div class="exptable">
+          <span>00</span>
+          <span>مشتری</span>
+        </div>
+        <div class="exptable">
+          <span>03</span>
+          <span>مهارت ها</span>
+        </div>
+        <div class="exptable">
+          <span style="
+                font-family: myFirstFont;
+                font-size: x-large;
+                margin: 0 0 13px 0;
+              ">سطح</span>
+          <span>تازه کار</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container3" id="projects">
+    <div class="con3head">
+      <h2>پروژه های من</h2>
+      <button>
+        <a href="Download Projects.rar" download="">دانلود همه</a>
+      </button>
+    </div>
+    <div class="ProjectCon">
+      <div class="projects">
+          <div class="progectImg">
+            <img src="projectimg/Screenshot1.png" alt="" />
+          </div>
+        </a>
+        <span>Sign Up Form</span>
+        <a href="Download Projects/SingUp/train2.html">تماشای پروژه <i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+      <div class="projects">
+          <div class="progectImg">
+            <img src="projectimg/Screenshot2.png" alt="" />
+          </div>
+        </a>
+        <span>Water Dark/Light mod</span>
+        <a href="Download Projects/weater/weater.html">تماشای پروژه <i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+    </div>
+    <div class="ProjectCon">
+      <div class="projects">
+          <div class="progectImg">
+            <img src="projectimg/Screenshot3.png" alt="" />
+          </div>
+        </a>
+        <span>Data Base Reasearch</span>
+        <a href="Download Projects/data base/dtb.html">تماشای پروژه <i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+      <div class="projects">
+          <div class="progectImg">
+            <img src="projectimg/Screenshot4.png" alt="" />
+          </div>
+        </a>
+        <span>Dandan Pezeshki Full</span>
+        <a href="Download Projects/dndn/dandan/dandan.html">تماشای پروژه <i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+    </div>
+    <div class="hire">
+      <div class="dscptn">
+        <h2>بیایید برای پروژه بعدی کنار هم باشیم.</h2>
+        <p>
+          ما به افراد باتجربه تا کم تجربه در زمینه های (Back End , UI UX ,
+          SEO) نیاز مندیم
+        </p>
+      </div>
+      <button>به ما ملحق شو</button>
+    </div>
+  </div>
+
+  <div class="container4">
+    <h1>ارتباط با ما</h1>
+    <div class="inputs1">
+      <input type="email" placeholder="ایمیل" />
+      <input type="text" placeholder="نام" />
+    </div>
+    <div class="discrip">
+      <textarea class="discriptions" type="text" name="" id="" placeholder="توضیحات خودرا اضافه کنید..."></textarea>
+      <button>تایید</button>
+    </div>
+  </div>
+
+  <div class="footer" id="footer">
+    <div class="icons">
+      <a href="http://t.me/RVN_MZ">
+        <i class="tel fa-brands fa-telegram"></i></a>
+      <i class="yt fa-brands fa-youtube"></i>
+      <i class="inst fa-brands fa-instagram"></i>
+    </div>
+    <div class="createdby">
+      <i class="fa-solid fa-code"></i>
+      <span>Created by A_MZ</span>
+    </div>
+  </div>
+
+  <script>
+    function showsidebar() {
+      const sidbar = document.querySelector(".sidebar");
+      sidbar.style.display = "flex";
+    }
+    function hidesidebar() {
+      const sidbar = document.querySelector(".sidebar");
+      sidbar.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
